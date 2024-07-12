@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PhanTom Group</title>
+        <link rel="stylesheet" href="phantom.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">
+                <p><span>Phan</span>Tom</p>
+            </div>
+            <ul class="menu">
+                <li><a href="#home"><b>Home</b></a></li>
+                <li><a href="#menu"><b>Achievements</b></a></li>
+                <li><a href="#reservation"><b>Solicit</b></a></li>
+                <li><a href="competence.html"><b>Our Skills</b></a></li>
+                <li><a href="apropos.html"><b>About Us</b></a></li>
+
+            </ul>
+            <div class="toggle_menu"></div>
+        </header>
+        <!--section Acceuil-->
+        <section id="home">
+            <div class="left">
+                <h4>Our Realizations</h4>
+                <h1>PhanTom Group</h1>
+                <p>We are young entrepreneurs and IT students, and we have skills in
+                    creation of video games, applications and websites. We also specialize in online training.
+                    We are passionate about IT and we use all our know-how to design interactive experiences
+                    and innovative. Whether to entertain, inform or train, we are here to turn your ideas into reality. With our expertise,
+                    we can create captivating games, functional applications and attractive websites.
+                    We are ready to take on any IT challenge!<br><strong>Powered by PhanTom Group</strong></p>
+                <button><a href="mailto:aimes889@gmail.com">Ask for a service</a></button>
+            </div>
+            <div class="right">
+                <img src="ordi.jpg">
+            </div>
+            </section>
+             <!--section menu-->
+             <section id="menu">
+                <h4 class="mini_title">Our Achievements</h4>
+                <h2 class="title">Popular Achievements</h2>
+                <div class="dishes">
+                    <div class="dish">
+                        <img src="ordi.jpg" >
+                        <p>Game Name</p>
+                        <h2><a href="#">See More</a></h2>
+                        <a href="#"><b>Download</b></a>
+                    </div>
+                </div>
+             </section>
+             
+            
+             <!--secttion service-->
+             <section id="reservation">
+                <h4 class="mini_title">service</h4>
+                <h2 class="title">COMPLETE THESE FIELDS FOR YOUR SERVICE REQUEST</h2>
+                <form action="">
+                    <label><b>Name</b></label>
+                    <input type="text" placeholder="Napoleon Hill">
+
+                    <label><b>Email</b></label>
+                    <input type="email" placeholder="abcd99@mail.com">
+
+                    <label><b>Phone Number</b></label>
+                    <input type="number" placeholder="+226 64153804">
+
+                    <label><b>Reservation Date</b></label>
+                    <input type="date">
+
+                    <label for="mail"><b>Job Description</b></label><br>
+                    <textarea name="commentaire" cols="50" rows="5" ></textarea><br>
+                    <input type="submit"  value="Start the Request" >
+                </form>
+             </section>
+             <!--footer-->
+             <footer>
+                <div class="services_list">
+
+                    <div class="service">
+                        <img src="clock.png" alt="">
+                        <h2>Hours</h2>
+                        <p>8h30 à 17h45</p>
+                        <p>17h45 à 7h30</p>
+                    </div>
+                    <div class="service">
+                        <img src="pin.jpg" alt="">
+                        <h2>Adresses</h2>
+                        <p>Burkina-faso - Ouagadougou</p>
+                        <p>Maroc-Rabat</p>
+                        <p>Zambie-Lusaka</p>
+                    </div>
+                    <div class="service">
+                        <img src="email.png" alt="">
+                        <h2>Emails</h2>
+                        <p>uzumakiluther@gmail.com</p>
+                        <p>omarabdifatah383@gmail.com</p>
+                        <p>nyirendaamos1@gmail.com</p>
+                        <p>aimes889@gmail.com</p>
+                    </div>
+
+                    <div class="service">
+                        <img src="call.jpg" alt="">
+                        <h2>Numbers</h2>
+                        <p>+226 73481099</p>
+                        <p>+212 0696494256</p>
+                        <p>+212 684373680 </p>
+                        <p>+226 64153804</p>
+                        
+                    </div>
+
+                    <hr>
+                </div>
+                <p class="footer_text">Powered by <span>PhanTom Group</span> |All rights reserved.  </p>
+             </footer>
+             <script>
+                var small_menu=document.querySelector('.toggle_menu')
+                var menu=document.querySelector('.menu')
+                small_menu.onclick=function(){
+                    small_menu.classList.toggle('active')
+                    menu.classList.toggle('responsive')
+                }
+             </script>
+    </body>
+</html>
